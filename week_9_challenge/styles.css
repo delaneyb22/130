@@ -1,0 +1,14 @@
+#picture{
+    display:block;
+    height:150px;
+    overflow:hidden;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+}
+#botom{
+    display:grid;
+    grid-template-columns: 3fr;
+}

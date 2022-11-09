@@ -45,6 +45,7 @@ header{
     background-color: #a5be00;
     display:grid;
     grid-template-columns: 150px auto;
+    
 }
 nav a:hover{
     background-color: #1159ac;
@@ -230,4 +231,40 @@ nav {
         margin-top: 25px;
     }
 }
-            
+
+#rivers_logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+#rivers_content{
+    max-width: 1600px;
+    margin: 0 auto;
+    display:grid;
+} 
+header{
+    background-color: #a5be00;
+    display:grid;
+    grid-template-columns: 150px auto;
+}    
+.idaho-river{
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #a5be00;
+}   
+.utah-river{
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #a5be00;
+}   
+.arizona-river{
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #a5be00;
+}   
+.river-msg-1{
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-column: 2/3;
+}
+#main-content{
+    display:grid;
+    grid-template-columns: 3fr;
+}
