@@ -232,39 +232,34 @@ nav {
     }
 }
 
-#rivers_logo_link{
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
+.river-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    justify-items: center;
 }
-#rivers_content{
-    max-width: 1600px;
+.idaho-river-image, .utah-river-image, .arizona-river-image{
+    justify-items: left;
+    margin-top: 40px;
+    border: 10px solid #396E94;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #a5be00;
+}
+#idaho-river-msg, #utah-river-msg, #arizona-river-msg{
+    display: flex;
+    text-align: center;
+    
+}
+h2{
+    font-family: 'Architects Daughter', 'Bradley Hand', sans-serif;
+}
+#rivers-content{
     margin: 0 auto;
-    display:grid;
-} 
-header{
-    background-color: #a5be00;
-    display:grid;
-    grid-template-columns: 150px auto;
-}    
-.idaho-river{
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #a5be00;
-}   
-.utah-river{
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #a5be00;
-}   
-.arizona-river{
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #a5be00;
-}   
-.river-msg-1{
-    display: grid;
-    grid-template-columns: 3fr;
-    grid-column: 2/3;
+    max-width: 1600px;
 }
-#main-content{
-    display:grid;
-    grid-template-columns: 3fr;
+#arizona-river-image{
+    width: 100%;
+    height: auto;
 }
+
