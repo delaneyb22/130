@@ -163,6 +163,10 @@ footer .social img{
     opacity: .6;
     transform: scale(1.1);
 }
+.arizona-river-image:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
 .card-img, .mountains{
     width: 100%;
 }
