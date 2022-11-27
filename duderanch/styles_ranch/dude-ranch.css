@@ -5,16 +5,7 @@
     grid-template-columns: 200px, 200px, 200px;
     grid-template-rows: 200px, 200px, 200px
 }
-nav {
-    display: grid;
-    grid-template-columns: 100px, 1fr, 1fr,1fr;
-    grid-template-rows: 1fr;
-    justify-content: space-around;
-    text-align: center;
-    background-color:#D4AC0D;
-    text-decoration: none;
-    padding: 35px;
-}
+
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #006D77  ;
@@ -51,6 +42,13 @@ h1, h2 {
     width:100px;
     margin-right: auto;
 }
+
+#logo_link {
+    width: 100px;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
 body{
     background-color:#83C5BE;
 }
@@ -85,8 +83,14 @@ footer .social img{
 }
 
 footer {
-    margin-top: 25px;
+    background-color: #D4AC0D;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 nav a:hover{
     background-color: #83C5BE;
     color:white;
@@ -133,5 +137,16 @@ nav a:hover{
 }
 .h1{
     text-align: center;
-    
+}
+.h3{
+    color:#006D77;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #D4AC0D;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
 }
