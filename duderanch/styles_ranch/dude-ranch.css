@@ -72,6 +72,10 @@ footer{
     justify-content: space-around;
     text-align: center;
 }
+footer p{
+    color:black;
+}
+
 
 footer a{
     color: black;
@@ -119,7 +123,8 @@ nav a{
 
 .home-grid{
     display: grid;
-    grid-template-columns: repeat(4, 400px);
+    /*grid-template-columns: repeat(4, 400px);*/
+    grid-template-columns: 400px 1fr 1fr 1fr;
     grid-template-rows:repeat(5, 400px);
 }
 .first-img{
@@ -127,19 +132,24 @@ nav a{
     grid-column-start: 1;
     height: 75%;
     grid-row:1/3;
-    
+    box-shadow: 5px 5px 10px #E29578;
+    margin-top:10px;
 }
 .second-img{
-    grid-column-start: 3;
+    grid-column: 3/5;
     grid-row-start: 3;
     z-index: -1;
-    height: 55em;
+    height: 100%;
 }
 .first-msg{
     background-color: #EDF6F9;
     grid-column:2/5;
     grid-row: 2/3;
     font-size: 20pt;
+}
+.first-msg h1{
+    margin-left:auto;
+    margin-right:auto;
 }
 .second-msg{
     background-color: #EDF6F9;
@@ -178,12 +188,12 @@ nav {
 }
   
 .dropdown {
-    float: left;
+    grid-column-start: 2;
     overflow: hidden;
 }
   
 .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 30px;  
     border: none;
     outline: none;
     color: white;
