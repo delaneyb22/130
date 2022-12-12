@@ -122,14 +122,14 @@ nav a{
 .home-grid{
     display: grid;
     /*grid-template-columns: repeat(4, 400px);*/
-    grid-template-columns: 400px 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
     grid-template-rows:repeat(5, 400px);
 }
 .first-img{
     height: auto;
-    grid-column-start: 1;
-    height: 75%;
-    grid-row:1/3;
+    width: 100%;
+    grid-column:1/3;
+    /*grid-row:1/3;*/
     box-shadow: 5px 5px 10px #E29578;
     margin-top:10px;
 }
@@ -140,10 +140,18 @@ nav a{
     height: 100%;
 }
 .first-msg{
-    background-color: #EDF6F9;
     grid-column:2/5;
     grid-row: 2/3;
     font-size: 20pt;
+    text-align: left;
+   
+}
+#background_box{
+    background-color: #EDF6F9;
+    grid-column: 2/5;
+    grid-row:2/3;
+    padding-bottom:30px;
+    height: 500px;
 }
 .first-msg h1{
     margin-left:auto;
