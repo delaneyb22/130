@@ -250,6 +250,7 @@ nav {
     grid-row-start: 2;
     margin:auto;
     font-size: 20pt;
+    padding-top:50px;
 }
 .boxed-2{
     background-color: #006D77;
@@ -257,13 +258,14 @@ nav {
     grid-row-start: 3;
     margin: auto;
     font-size: 20pt;
-    margin-bottom: 20px;
+    border-top: 5pt solid #D4AC0D;
 }
 .first-pkg{
     grid-column-start: 1;
     grid-row-start: 2;
     margin:auto;
     font-size: 30pt;
+    border: 10px solid #D4AC0D;
 }
 .first-pkg:hover{
     background-color: #E29578;
@@ -275,28 +277,28 @@ nav {
     grid-column-start: 1;
     margin: auto;
     font-size: 30pt;
+    border: 10px solid #D4AC0D;
 }
-.footer-img{
-    grid-column-start: 1;
-    grid-row-start: 4;
-    width:100%;
-}
+
 .packages-home-grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 1fr 1fr 1fr;
+    grid-template-rows: 400px 1fr 400px 400px;
 }
 .header-img{
-    height: 400px;
+    height: 200%;
     width:100%;
     grid-column: 1/3;
     background-size: contain;
 }
 .footer-img{
-    height: 400px;
+    height: 200%;
     width:100%;
     grid-column: 1/3;
     grid-row:4/5;
+    z-index:-2;
+    margin-bottom:200px;
+    
 }
 #book-now-content{
     max-width: 1600px;
